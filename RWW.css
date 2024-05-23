@@ -1,0 +1,274 @@
+/* Reset and global styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    color: #555;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.8px;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(background1.avif);
+    height: 100vh;
+    background-size: cover;
+}
+.login-container {
+    position: absolute;
+    top: 50%;
+    right: 1%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(228, 194, 102, 0.8);
+    padding: 2vh; /* Adjust padding using relative units */
+    border-radius: 1vw; /* Adjust border-radius using relative units */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-top: 1vh; /* Adjust margin using relative units */
+}
+
+input {
+    padding: 1vh; /* Adjust padding using relative units */
+    margin-top: 0.5vh; /* Adjust margin using relative units */
+    margin-bottom: 1.5vh; /* Adjust margin using relative units */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 1.5vh; /* Adjust padding using relative units */
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 0.5vw; /* Adjust border-radius using relative units */
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.container {
+    width: 90%; /* Adjust width using relative units */
+    margin: auto;
+}
+
+.logo {
+    position: absolute;
+    top: 1vh; /* Adjust top using relative units */
+    left: 1vh; /* Adjust left using relative units */
+    height: 5vh; /* Adjust height using relative units */
+    width: 5vh; /* Adjust width using relative units */
+    border-radius: 50%;
+}
+
+small {
+    position: absolute;
+    top: 2.5vh; /* Adjust top using relative units */
+    left: 7vh; /* Adjust left using relative units */
+    color: #e5ce9b;
+    font-size: 1.2vh; /* Adjust font-size using relative units */
+}
+
+.header-hadding h1 {
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+    font-size: 7vh; /* Adjust font-size using relative units */
+    color: white;
+    text-transform: uppercase;
+    position: absolute;
+    text-shadow: 0.5vh 0.5vh 1vh black; /* Adjust text-shadow using relative units */
+}
+
+.header-p {
+    font-size: 1.2vh; /* Adjust font-size using relative units */
+    color: white;
+    position: absolute;
+    left: 42%;
+    top: 51%;
+    border-top: 0.1vh solid azure;
+    border-bottom: 0.1vh solid azure;
+    text-transform: uppercase;
+    text-shadow: 0.5vh 0.5vh 1vh black; /* Adjust text-shadow using relative units */
+    letter-spacing: 0.7vh; /* Adjust letter-spacing using relative units */
+    padding: 0.5vh 0;
+}
+
+nav {
+    position: fixed;
+    top: 0px;
+    right: 0;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+}
+
+#navbar {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0.5vw 1vw; /* Adjust padding using relative units */
+    list-style: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.9vh; /* Adjust font-size using relative units */
+    margin-left: 2vw; /* Adjust margin-left using relative units */
+    padding: 1vh 1vw; /* Adjust padding using relative units */
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #00ffff;
+}
+
+li {
+    position: relative;
+    top: 0.1vh;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    list-style: none;
+    left: 5vw; /* Adjust left using relative units */
+    justify-items: center;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    transition: color 0.4s, border-bottom 0.4s ease, background-color 0.4s ease-out, text-decoration 0.4s ease;
+    border: none;
+    padding: 1vh 1vw; /* Adjust padding using relative units */
+}
+
+a:hover {
+    color: rgb(0, 255, 255);
+    text-decoration: underline rgb(255, 255, 0);
+}
+
+a:active {
+    color: maroon;
+}
+
+.section-div {
+    width: 90%; /* Adjust width using relative units */
+    margin: auto;
+    line-height: 1.2;
+    margin-top: 8vh; /* Adjust margin-top using relative units */
+    padding-bottom: 3vh; /* Adjust padding-bottom using relative units */
+    background-color: rgba(247, 242, 242, 0.507);
+    padding: 3vh 4vh; /* Adjust padding using relative units */
+}
+
+.section-div h1 {
+    font-weight: 700;
+}
+
+.section-div p {
+    margin-top: 2vh; /* Adjust margin-top using relative units */
+}
+
+.feature {
+    width: 90%; /* Adjust width using relative units */
+    margin: auto;
+    margin-top: 10vh; /* Adjust margin-top using relative units */
+    margin-bottom: 10vh; /* Adjust margin-bottom using relative units */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    background-color: rgba(247, 242, 242, 0.507);
+    padding: 3vh 0;
+}
+
+.feature-div {
+    position: relative;
+    border: none;
+    padding: 2vh;
+    width: 27vw; /* Adjust width using relative units */
+    box-shadow: 0px 0px 1vh rgba(163, 161, 161, 0.37); /* Adjust box-shadow using relative units */
+    background-color: rgb(255, 255, 255);
+}
+
+.feature-div h3 {
+    margin-bottom: 2vh; /* Adjust margin-bottom using relative units */
+    color: cadetblue;
+    font-size: 2vh; /* Adjust font-size using relative units */
+    margin-top: 2vh; /* Adjust margin-top using relative units */
+}
+
+.feature-div h3::after {
+    content: "";
+    display: block;
+    color: darkcyan;
+    height: 0.1vh; /* Adjust height using relative units */
+    background: rgba(0, 139, 139, 0.329);
+    margin-top: 0.5vh; /* Adjust margin-top using relative units */
+}
+
+.hand-made {
+    position: absolute;
+    height: 9vh; /* Adjust height using relative units */
+    width: 9vh; /* Adjust width using relative units */
+    left: 36%;
+    top: -11%;
+    background: rgb(0, 139, 139);
+    border-radius: 50%;
+    stroke: rgb(174, 233, 223);
+    padding: 1vh;
+}
+
+footer {
+    margin: auto;
+    background-color: #555;
+    padding: 2vh;
+}
+
+footer img {
+    height: 4vh; /* Adjust height using relative units */
+    width: 4vh; /* Adjust width using relative units */
+    margin-top: 2vh; /* Adjust margin-top using relative units */
+    margin-left: 2vh; /* Adjust margin-left using relative units */
+}
+
+footer h4 {
+    color: rgb(197, 190, 190);
+    font-size: 1.5vh; /* Adjust font-size using relative units */
+    font-weight: 400;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content form {
+    padding: 15px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
